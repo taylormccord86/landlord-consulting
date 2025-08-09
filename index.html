@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landlord Consulting AZ — Taylor McCord</title>
+  <meta name="description" content="Flat-fee landlord consulting in Metro Phoenix: tenant placement, lease drafting, screening, and investment property help." />
+  <style>
+    :root { --max: 980px; --pad: 18px; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; color: #111; background: #fafafa; }
+    header { background: #1f2937; color: #fff; padding: 56px var(--pad) 40px; }
+    header .wrap { max-width: var(--max); margin: 0 auto; }
+    h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 40px); }
+    .sub { opacity: .9; max-width: 60ch; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 32px var(--pad); }
+    h2 { margin-top: 0; font-size: clamp(22px, 4vw, 28px); }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 1px 4px rgba(0,0,0,.04); padding: 20px; }
+    ul { margin: 0; padding-left: 20px; }
+    li { margin: 10px 0; }
+    .grid { display: grid; gap: 18px; }
+    @media (min-width: 820px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .muted { color: #4b5563; }
+    .cta { display: inline-block; padding: 12px 16px; border-radius: 10px; background: #111827; color: #fff; text-decoration: none; }
+    footer { border-top: 1px solid #e5e7eb; background: #fff; padding: 20px var(--pad); }
+    footer .inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; gap: 14px; justify-content: space-between; flex-wrap: wrap; }
+    .footer-left { display: flex; align-items: center; gap: 12px; }
+    .headshot { width: 44px; height: 44px; border-radius: 999px; object-fit: cover; border: 1px solid #e5e7eb; }
+    .license { font-weight: 600; }
+    .small { font-size: 14px; }
+    .checklist { list-style: none; padding-left: 0; }
+    .checklist li::before { content: "✓ "; color: #16a34a; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Landlord Consulting AZ</h1>
+      <p class="sub">Flat-fee help for Arizona landlords and investors — leases, tenant placement, screening, and practical guidance. Serving Mesa, Tempe, Phoenix, Chandler, Gilbert, and Scottsdale.</p>
+      <p style="margin-top:18px"><a class="cta" href="mailto:taylormccord86@gmail.com">Email Taylor</a> &nbsp; <span class="small">or call/text: <strong>(520) 261‑7427</strong></span></p>
+    </div>
+  </header>
+
+  <main class="wrap grid">
+    <section class="card">
+      <h2>About Taylor</h2>
+      <p>With over 5 years of hands‑on experience as both a landlord and property manager in Mesa, AZ, I help owners take the stress out of rentals. I'm also a licensed real estate agent and can help you buy or sell investment properties.</p>
+      <ul class="checklist">
+        <li>Local expertise across the East Valley</li>
+        <li>Clear, flat pricing — no surprises</li>
+        <li>Fast turnaround on screening and leases</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Services</h2>
+      <ul>
+        <li><strong>Buy or list a rental property — $3,000 flat</strong></li>
+        <li><strong>Contract Writing — $199</strong> (custom lease & agreement drafting; Arizona Association of Realtors official lease available)</li>
+        <li><strong>Budget Placement — $750</strong> (listing & screening only)</li>
+        <li><strong>Tenant Placement — $1,200 flat</strong> (marketing, showings, screening, lease signing)</li>
+        <li><strong>One‑on‑One Consulting</strong> (hourly)</li>
+      </ul>
+      <p class="muted small">Ask about buyer credit: up to $1,500 toward closing costs when purchasing an investment property.</p>
+    </section>
+
+    <section class="card">
+      <h2>How It Works</h2>
+      <ol>
+        <li>Free 10‑minute call to scope your needs.</li>
+        <li>We pick the flat‑fee service that fits.</li>
+        <li>I handle the paperwork, screening, and hand‑offs.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>What Clients Say</h2>
+      <p class="muted">“Full‑service help without the full‑service markup. Clear communication, fast leasing.”</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div class="footer-left">
+        <img src="assets/headshot.png" alt="Taylor McCord headshot" class="headshot" />
+        <div class="small">
+          <div><strong>Taylor McCord</strong> — Call Winsor Realty, LLC</div>
+          <div class="license">Arizona REALTOR® License: #SA687991000</div>
+        </div>
+      </div>
+      <div class="small muted">© <span id="y"></span> Landlord Consulting AZ</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
